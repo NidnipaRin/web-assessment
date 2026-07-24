@@ -250,31 +250,78 @@ header {
 /*ส่วนของ exhibit*
 -----------------------*/
 .exhibit{
-    display: flex;
     width: 100%;
     background-color:#ececec;
-    overflow: hidden;
 }
 
 .block-exhibit{
     background-color: #ececec;
-    padding: 32px 40px 0px 40px;
+    padding: 32px 0;
 }
 
 .block-exhibit h2{
     text-align: center;
+    margin-bottom: 32px;
 }
 
-.left-exhibit-video{
-    width: 60%;
+.exhibit-content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+
 .left-exhibit {
-    max-width: 60%;
     flex: 0 0 60%;
-    padding: 32px 24px;
+    max-width: 60%;
+    padding: 0 24px 32px 24px;
     background-color: #ececec;
-    border-right: 1px solid #b4b4b4
+    box-sizing: border-box;
 }
+
+.left-exhibit-video video{
+    width: 100%;
+   height: auto;
+   display: block;
+}
+
+.right-exhibit{
+    flex: 0 0 40%;
+    max-width: 40%;
+    background-color: #ececec;
+}
+.right-exhibit .right-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+}
+
+.right-exhibit .right-card-guest {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+    background-color: #b4b4b4;
+}
+
+.right-exhibit .right-info-image{
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+
+.right-exhibit .right-info-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.right-exhibit .right-info-content {
+    flex: 0 0 65%;
+    max-width: 65%;
+}
+
 
 /*footer*
 -------------------------------*/
@@ -354,7 +401,7 @@ footer {
 
 
 /*โซน infomation*/
-.left-info, .right-info, .block-course, .right-exhibit, .footer-desktop, .left-info-content  {
+.left-info, .right-info, .block-course, .footer-desktop, .left-info-content  {
     display: none; /* ซ่อนข้อมูลของจอคอม บนจอมือถือ */
   }
 
@@ -427,4 +474,14 @@ footer {
 
 }
 
+/*โซน exhibit*/
+.exhibit-content {
+    flex-direction: column;
+
+}
+
+.left-exhibit, .right-exhibit {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 }
