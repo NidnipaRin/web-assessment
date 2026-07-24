@@ -1,0 +1,430 @@
+/* สำหรับทั้งหน้าเว็บ*
+-------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #ffffff;
+    color: #333333;
+    overflow-x: hidden; /*เพื่อฟิคไม่ให้มีscroll bar แนวนอนเกิดขึ้น ละหน้าเว็บเด้งไปเด้งมา*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*สำหรับตัวอักษร*
+-------------------------------*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+h3 {font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+
+.text-large {
+    font-size: 25px;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+}
+
+.text-medium {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.text-small {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-top: 32px;
+
+}
+
+/*Header*
+-------------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+.logo img {
+    width: auto;
+    height: 32px;
+}
+
+.logo-colmar{
+    font-weight: bold;
+    color: #4a4a4a;
+    font-size: 18px;
+}
+
+.logo-academy{
+    color: #9b9b9b;
+    font-size: 18px;
+}
+
+.nav-link{
+    display: flex;
+    gap: 16px;
+}
+
+.mobile-link {
+  display: none; /* ซ่อน Header มือถือบนจอคอม */
+}
+
+
+
+/*ส่วนของด้านบน Banner (Learn Something...)*
+-------------------------------*/
+.banner {
+    display: flex;
+    width: 100%;
+    background-color: #b4b4b4;
+    overflow: hidden;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 24px;
+}
+
+.banner-image {
+    flex: 0 0 60%;
+
+}
+.banner-image img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*ส่วนของ Information (It doesn't...)*
+-------------------------------*/
+.information{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.left-info {
+    max-width: 60%;
+    flex: 0 0 60%;
+    padding: 32px 24px;
+    background-color: #ececec;
+    border-right: 1px solid #b4b4b4
+}
+
+.left-info-image{
+    width: 100%;
+}
+
+
+.right-info {
+    max-width: 40%;
+    flex: 0 0 40%;
+    background-color: #ececec;
+}
+
+.right-card{
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #ececec;
+    overflow: hidden;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.right-card-guest {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: #b4b4b4;
+    overflow: hidden;
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.right-info-image{
+    max-width: 35%;
+    height: auto;
+    padding: 16px 16px;;
+}
+
+.right-info-content {
+    padding: 16px 0px;
+}
+
+/*ส่วนของ Couse*/
+.block-course{
+    background-color: #cccccc;
+    padding: 32px 40px 0px 40px;
+}
+
+.block-course h2{
+    text-align: center;
+}
+
+.course{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #cccccc;
+    overflow: hidden;
+    padding: 32px 32px;
+
+}
+
+.course-info {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-header {
+    padding: 16px 0px 24px 16px;
+}
+
+.couse-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*ส่วนของ exhibit*
+-----------------------*/
+.exhibit{
+    display: flex;
+    width: 100%;
+    background-color:#ececec;
+    overflow: hidden;
+}
+
+.block-exhibit{
+    background-color: #ececec;
+    padding: 32px 40px 0px 40px;
+}
+
+.block-exhibit h2{
+    text-align: center;
+}
+
+.left-exhibit-video{
+    width: 60%;
+}
+.left-exhibit {
+    max-width: 60%;
+    flex: 0 0 60%;
+    padding: 32px 24px;
+    background-color: #ececec;
+    border-right: 1px solid #b4b4b4
+}
+
+/*footer*
+-------------------------------*/
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+}
+
+.footer-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px 16px;
+}
+
+/*ส่วนของ link*
+-------------------------------*/
+.btn-start {
+  display: inline-block;
+  background-color: #4d4c4c;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding: 8px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.cta-link{
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #0bb1f3;
+  transition: background-color 0.2s ease;
+  }
+
+  /*สำหรับปรับหน้าจอคอม*
+-------------------------------*/
+@media screen and (min-width: 1440px) {
+.block-course-mobile, .footer-mobile{
+    display: none; /* ซ่อนข้อมูลของมือถือจากจอคอม */
+}
+
+
+}
+
+/*สำหรับปรับหน้าจอมือถือ*
+-------------------------------*/
+@media (max-width: 768px) {
+
+.header-desktop {
+    display: none; /* ซ่อน Header คอมบนจอมือถือ */
+  }
+
+.mobile-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    width: 100%;}
+
+/*โซน banner*/
+.banner {
+    flex-direction: column;
+}
+
+
+/*โซน infomation*/
+.left-info, .right-info, .block-course, .right-exhibit, .footer-desktop, .left-info-content  {
+    display: none; /* ซ่อนข้อมูลของจอคอม บนจอมือถือ */
+  }
+
+.right-info-mobile {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0px 32px 0;
+    background-color: #ececec;
+}
+
+.mobile-card1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    margin-bottom: 64px;
+}
+
+.mobile-card2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.mobile-card img {
+    width: 100%;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.mobile-card-content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.mobile-card-content p.text-medium {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.cta-link {
+    margin-left: 16px;
+}
+
+/*โซน course*/
+.block-course-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    background-color: #ececec;
+}
+
+.block-course-mobile h2{
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.course-info-mobile {
+    width: 100%;
+    background-color: #9b9b9b;
+    padding: 16px 0px 24px 16px;
+    margin-bottom: 8px;
+
+}
+
+}
